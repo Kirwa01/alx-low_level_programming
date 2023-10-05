@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*
+/**
  * main - opens the main function
  *
  * Return: ends the code
