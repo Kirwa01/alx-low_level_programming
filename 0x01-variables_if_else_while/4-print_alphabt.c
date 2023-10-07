@@ -1,12 +1,11 @@
 #include <stdio.h>
 /**
- *
  * main - start point
  *
  * Return: denoted zero
  */
 
-int main(0)
+int main(void)
 {
 	char i;
 
