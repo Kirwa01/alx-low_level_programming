@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- *int_islower - print lowercase
- *
- *Return: is 0
+ *_islower - print lowercase
+ *@c: parameter
+ *Return: 1 on success and 0 on failure
  */
 
 int _islower(int c)
