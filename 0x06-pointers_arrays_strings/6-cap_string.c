@@ -9,7 +9,6 @@ char *cap_string(char *i)
 	int strcnt;
 
 	strcnt = 0;
-
 	while (i[strcnt] != '\0')
 	{
 		if (i[0] >= 97 && i[0] <= 122)
@@ -18,15 +17,15 @@ char *cap_string(char *i)
 		}
 	if (i[strcnt] == ' ' || i[strcnt] == '\t' || i[strcnt == '\n'
 			|| i[strcnt] == ',' || i[strcnt] == ';' || i[strcnt] == '.'
-			|| i[strcnt] == '.' || i[strcnt] == '!' || i[strcnt] == '?'
-			|| i[strcnt] == '"' || i[strcnt] == '(' || i[strcnt] == ')' 
-			|| i[strcnt] == '{' || i[strcnt] == 'i}')
+			|| i[strcnt] == '!' || i[strcnt] == '?'|| i[strcnt] == '"' 
+			|| i[strcnt] == '(' || i[strcnt] == ')'|| i[strcnt] == '{' 
+			|| i[strcnt] == '}')
 
 	if (i[strcnt + 1] >= 97 && i[strcnt + 1] <= 122)
 	{
 		i[strcnt + 1] = i[strcnt + 1] - 32;
 	}
 	strcnt++;
-
+	}
 	return (i);
 }
