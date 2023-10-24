@@ -1,28 +1,28 @@
 #include "main.h"
 
 /**
- * int_strspn - gets the length of the  substring
- * @accept: input
- * @s: input
+ * _strspn - gets the length of the  substring
+ * @accept: character to be searched.
+ * @s: the string to be measured
  * Return: o in success
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i, n,  value, check;
+	unsigned int bytes = 0;
+	int index;
 
-	value = 0;
-
-	for (i = 0 ; s[i] != '\0' ; i++)
+	while (*s)
 	{
-		check = 0;
-
-		for (n = 0 ; s[n] != '\0' ; n++)
+		for (index = 0 ; accept[index] ; index++)
 		{
-			if (accept[n] == s[i])
+			if (*s == accept[index])
 			{
-				value++;
-				check = 1;
+				bytes++;
+				break;
 			}
+			else if (accept[index + 1] == '\0')
+				return (bytes);
 		}
+		s++;
+		
 	}
-}
