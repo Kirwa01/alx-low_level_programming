@@ -17,14 +17,18 @@ int sum_them_all(const unsigned int n, ...)
 
 	va_start(arg, n);
 
-	if (n == 0)
-	{
-		return (0);
-	}
 	for (i = 0; i < n; i++)
 	{
-		sum += va_arg(arg, unsigned int);
+		if (n == 0)
+		{
+			return (0);
+		}
+		else
+		{
+			sum += va_arg(arg, unsigned int);
+		}
 	}
+	
 	printf("%u\n", sum);
 	va_end(arg);
 	return (sum);
