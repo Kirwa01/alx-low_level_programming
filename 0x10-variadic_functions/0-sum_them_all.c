@@ -28,8 +28,6 @@ int sum_them_all(const unsigned int n, ...)
 			sum += va_arg(arg, unsigned int);
 		}
 	}
-	
-	printf("%u\n", sum);
 	va_end(arg);
 	return (sum);
 }
